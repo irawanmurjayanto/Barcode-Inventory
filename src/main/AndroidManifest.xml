@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.barcodegcnew">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" /> <!-- <application android:hardwareAccelerated="true"> -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logogc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".HistoryBarcode"></activity>
+        <activity
+            android:name=".Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userpass"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".printSalesgroupDetail"
+            android:label="Summary Sales"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".printSalesgroup"
+            android:label="Summary Sales"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".warningloading"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.irawan2" />
+        <activity
+            android:name=".warningselesai"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.irawan2" />
+        <activity
+            android:name=".warningumum"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.irawan2" />
+        <activity
+            android:name=".warningpass"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.irawan2" />
+        <activity
+            android:name=".warning"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".warningimportimportfilter"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".warningimport"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".warning"
+            android:label="Info"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".WrhParisSub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WrhParisLokal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WrhParisOutLokal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WrhParisOut"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WrhParis2Sambung"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WrhParis2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WrhParis"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".NURUploadBarcodeNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NURUploadBarcodeNew2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NURUploadBarcodeLokal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NURUploadBarcodeBatch"
+            android:screenOrientation="portrait" />
+        <activity android:name=".BarcodeEntry" /> <!-- <activity android:name=".BarcodeEntry" /> -->
+        <activity
+            android:name=".NURUploadBarcode"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".BarcodeEntry" /> -->
+        <activity
+            android:name=".tentang"
+            android:label="Barcode Golden Care"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name=".Emp_reg_inv"
+            android:label="Invoice Number"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name=".Emp_RegErrorLokal"
+            android:label="Error Data OUT"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Emp_RegOvenAss"
+            android:label="Oven Name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Emp_RegItemdesc"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".MainStockGC"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Emp_RegAssSaw"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".TorchOnCaptureActivityLokal"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".TorchOnCaptureActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".AnyOrientationCaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
