@@ -1,0 +1,125 @@
+<resources>
+
+    <style name="popup_window_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="MyTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textSize">12dp</item>
+        <item name="colorControlNormal">@color/colorCoklatTua</item>
+        <item name="android:color">@android:color/white</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">5dp</item>
+        <item name="android:maxWidth">30dp</item>
+        <item name="android:width">40dp</item>
+    </style>
+
+    <style name="myActionButtonStyle2" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">50dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:width">70dp</item>
+    </style>
+
+    <style name="Toolbar.TitleTextMain" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@color/colorGreymuda_2</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Toolbar.TitleText2" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPOSBiru</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:textSize">5sp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.UserDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:color">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/holo_orange_light</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+
+    <style name="Theme.irawan" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/zxing_transparent</item>
+        <item name="android:color">@color/colorBlack</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    <!--    <item name="android:windowTitleStyle">@style/question_dialog_title</item>-->
+
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="Theme.irawan2" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/zxing_transparent</item>
+        <item name="android:color">@color/colorBlack</item>
+        <!--<item name="android:windowBackground">@color/colorWhite</item>-->
+        <item name="android:windowBackground">@drawable/popup_background</item>
+        <!--    <item name="android:windowTitleStyle">@style/question_dialog_title</item>-->
+
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="irawan2">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:color">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/holo_orange_light</item>
+        <item name="windowActionBar">true</item>
+
+    </style>
+
+
+
+
+
+</resources>

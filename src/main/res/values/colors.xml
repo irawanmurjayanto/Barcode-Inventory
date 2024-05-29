@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFF</color>
+    <color name="colorBlue">#0099FF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreytua">#999999</color>
+    <color name="colorGreymuda">#CCCCCC</color>
+    <color name="colorGreymuda_2">#EAEAEA</color>
+    <color name="colorPOSBiru">#0066CC</color>
+    <color name="colorKuningTua">#FF9933</color>
+    <color name="colorMerahTua">#993366</color>
+    <color name="colorCoklatTua">#CC6666</color>
+
+</resources>
