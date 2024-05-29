@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context=".BarangActivityUser"
+
+    tools:showIn="@layout/activity_barang_cabang">
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/editTextUser"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:hint="User"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:text="Password"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/editTextPass"
+            android:layout_weight="1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+
+        <ImageView
+            android:layout_marginLeft="-40dp"
+            android:id="@+id/butpass1"
+            android:layout_weight="1"
+            android:src="@drawable/eyeclose"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        </LinearLayout>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="2dp">
+
+    <TextView
+        android:text="Hak"
+        android:layout_marginBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+
+        android:id="@+id/spnHak"
+        android:textColor="@color/colorPOSBiru"
+        android:layout_gravity="center_vertical"
+
+        android:layout_width="250dp"
+        android:layout_centerInParent="true"
+        android:layout_height="30dp"
+
+        android:background="@drawable/spincabang"
+        android:spinnerMode="dropdown" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <EditText
+
+            android:visibility="invisible"
+
+            android:id="@+id/editTextHak"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+
+             />
+
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tampung1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

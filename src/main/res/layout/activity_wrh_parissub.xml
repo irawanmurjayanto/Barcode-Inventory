@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".WrhParis">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/MyTheme"
+        app:popupTheme="@style/MyTheme"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorGreytua"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        />
+
+<LinearLayout
+    android:background="@drawable/addround"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="Noref : "
+        android:id="@+id/textnoref"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:visibility="invisible"
+
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+
+        android:id="@+id/butprocwrh"/>
+
+    <Button
+        android:textSize="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:background="@drawable/addroundbut"
+        android:text="Refresh"
+        android:id="@+id/butrefresh"
+        android:layout_width="70dp"
+        android:layout_height="40dp"/>
+
+    <Spinner
+
+        android:id="@+id/spnOven"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/customspinner1"
+        android:dropDownWidth="200dp"
+        android:dropDownVerticalOffset="28dp"
+        android:popupBackground="@android:color/white"
+        android:popupElevation="2dp"
+        android:stateListAnimator="@drawable/spinner_sla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@drawable/addroundjudul"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:hint="Cari Barcode"
+        android:textSize="12dp"
+        android:id="@+id/editcari"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>
+<LinearLayout
+    android:padding="3dp"
+    android:background="@drawable/addroundjudul"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/jumbarcode"
+        android:text="Jumlah Barcode : 0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:background="@drawable/addround"
+        android:id="@+id/rel0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:id="@+id/jdl1"
+            android:padding="5dp"
+            android:background="@drawable/addroundtitle"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="Barcode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_toRightOf="@+id/jdl1"
+            android:padding="5dp"
+            android:id="@+id/hd2"
+            android:background="@drawable/addroundtitle"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="Tanggal "
+            android:layout_marginLeft="2dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_toRightOf="@+id/hd2"
+            android:padding="5dp"
+            android:background="@drawable/addroundtitle"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="User Name"
+            android:layout_width="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/my_recycler_view"
+
+
+        android:layout_below="@+id/rltvheader"
+
+        android:scrollbars="vertical"
+
+        android:layout_width="match_parent"
+        android:background="@drawable/addroundtitle"
+        android:padding="5dp"
+
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/textTampung"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

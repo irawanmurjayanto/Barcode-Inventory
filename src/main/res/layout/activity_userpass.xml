@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userpass"
+android:background="@drawable/back1"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_marginTop="-8dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/rel1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:id="@+id/h1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/hatas" />
+        <TextView
+            android:layout_marginBottom="40dp"
+            android:layout_below="@+id/h1"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Aplikasi Stock"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/addrounduser"
+    android:id="@+id/rel2"
+   android:layout_centerInParent="true"
+    android:layout_below="@+id/rel1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:textColor="@color/colorPOSBiru"
+android:layout_centerHorizontal="true"
+        android:id="@+id/editUsername"
+        android:hint="User Name"
+        android:textSize="17dp"
+
+        android:backgroundTint="@color/colorPOSBiru"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <!--password-->
+
+    <LinearLayout
+        android:id="@+id/line1"
+         android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editUsername"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_weight="1"
+        android:layout_below="@+id/editUsername"
+        android:id="@+id/editPass"
+        android:textColor="@color/colorPOSBiru"
+        android:backgroundTint="@color/colorPOSBiru"
+        android:hint="Password"
+        android:textSize="17dp"
+        android:layout_gravity="center_vertical"
+
+        android:layout_width="250dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginLeft="-40dp"
+        android:id="@+id/butpass1"
+        android:layout_weight="1"
+        android:src="@drawable/eyeclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+
+
+    </LinearLayout>
+
+    <Button
+ android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:layout_below="@+id/line1"
+        android:id="@+id/butProcess"
+        android:background="@drawable/addround"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/rel2"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:text="@string/versi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Spinner
+        android:visibility="invisible"
+        android:id="@+id/spnCabang"
+        android:textColor="@color/colorPOSBiru"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="1dp"
+        android:layout_centerInParent="true"
+        android:layout_height="1dp"
+        android:background="@drawable/spincabang"
+        android:spinnerMode="dropdown" />
+
+
+
+
+
+
+    <TextView
+        android:hint="spin1"
+        android:visibility="invisible"
+
+        android:id="@+id/hasilSpin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:hint="spin2"
+        android:visibility="invisible"
+        android:layout_marginLeft="50dp"
+
+        android:id="@+id/hasilSpin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:hint="spin3"
+        android:visibility="invisible"
+        android:layout_marginLeft="50dp"
+
+        android:id="@+id/hasilSpin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rel2"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_above="@+id/b2"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Choosen By Outdoor Furniture Leaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/b2"
+            android:background="@drawable/hbawah"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.barcodegcnew.Emp_RegAssSaw">
+
+    <TextView
+
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textNotrans"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+
+    <EditText
+
+        android:padding="10dp"
+        android:id="@+id/textcariitem"
+        android:background="@color/colorGreymuda"
+        android:hint="Ketik Nama Item"
+        android:layout_below="@+id/textNotrans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/colorGreymuda_2"
+        android:id="@+id/my_recycler_view_dialog"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textcariitem"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

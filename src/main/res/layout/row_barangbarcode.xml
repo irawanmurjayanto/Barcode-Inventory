@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:layout_marginBottom="7dp"
+
+    android:padding="0dp">
+
+<android.support.v7.widget.CardView
+
+    android:id="@+id/cv"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:padding="10dp"
+
+    >
+
+    <Button
+        android:layout_centerVertical="true"
+        android:id="@+id/butdelbarctran"
+        android:textSize="12dp"
+        android:text="X"
+        android:textColor="@color/colorAccent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+<TextView
+
+    android:layout_toRightOf="@+id/butdelbarctran"
+    android:layout_centerVertical="true"
+    android:textSize="10dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/textViewRowbarcode"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="barcode" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textViewRowbarcode"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textViewRowTgl"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tgl" />
+
+
+
+<TextView
+
+    android:visibility="invisible"
+    android:layout_marginLeft="5dp"
+    android:textSize="12dp"
+    android:textStyle="bold"
+    android:id="@+id/textViewRowNama"
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:layout_below="@+id/textViewRowKode"
+    android:text="Nama Barang" />
+
+<TextView
+    android:textSize="10dp"
+    android:visibility="invisible"
+    android:id="@+id/textViewRowHarga"
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:layout_marginLeft="5dp"
+    android:layout_below="@+id/textViewRowNama"
+    android:text="Harga Jual" />
+
+    <TextView
+    android:textSize="10dp"
+    android:layout_marginLeft="5dp"
+    android:visibility="invisible"
+
+    android:id="@+id/textViewRowHarga_beli"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="0dp"
+
+
+    android:layout_below="@+id/textViewRowHarga"
+
+    android:text="Harga Beli" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible"
+        android:id="@+id/textViewRowIDNO"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textViewRowHarga_beli"
+        android:text="IDNO" />
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>

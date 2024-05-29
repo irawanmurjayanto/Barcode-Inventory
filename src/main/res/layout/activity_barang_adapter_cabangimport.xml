@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.CardView
+android:layout_marginBottom="5dp"
+        android:id="@+id/cv"
+
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:background="@drawable/addround"
+            android:padding="5dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@color/colorGreymuda"
+
+                android:layout_weight="1"
+
+
+
+                android:visibility="invisible"
+
+                android:id="@+id/textIDNO"
+
+                android:layout_width="1dp"
+
+                android:layout_height="1dp"
+
+
+
+                android:text="IDNO" />
+
+
+            <TextView
+                android:background="@drawable/addroundwrhparis"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/textBarcodenew"
+                android:visibility="visible"
+
+                android:layout_width="152dp"
+
+                android:layout_height="35dp"
+
+
+
+
+
+
+                android:text="barcode" />
+
+
+            <TextView
+                android:background="@drawable/addroundwrhparis"
+
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/textTglnew"
+                android:visibility="visible"
+                android:gravity="center"
+                android:layout_width="100dp"
+android:layout_gravity="center_vertical"
+                android:layout_height="35dp"
+
+
+                android:layout_marginLeft="2dp"
+
+
+
+                android:text="tgl" />
+
+
+            <TextView
+                android:background="@drawable/addroundwrhparis"
+                android:gravity="center"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:id="@+id/textUsernew"
+                android:visibility="visible"
+
+                android:layout_width="50dp"
+
+                android:layout_height="35dp"
+
+
+                android:layout_marginLeft="2dp"
+
+
+
+                android:text="user" />
+
+            <Button
+                android:gravity="center"
+android:layout_gravity="center_vertical"
+                android:textSize="7dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/addroundbut"
+                android:text="X"
+                android:layout_width="20dp"
+                android:layout_height="30dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

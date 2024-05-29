@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context=".Inventory_Barang"
+
+    tools:showIn="@layout/activity_inventory__barang">
+
+
+    <RelativeLayout
+        android:id="@+id/relcoll1"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+
+        android:background="@color/colorGreymuda"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+           android:id="@+id/laybutref"
+            >
+
+            <Button
+                android:id="@+id/butdelnoref"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+               android:padding="3dp"
+                android:background="@color/colorAccent"
+android:layout_marginBottom="5dp"
+                android:text="Del. NO REF"
+                android:textColor="@color/colorWhite"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/laybutref"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@+id/judulnoref"
+
+            android:background="@color/colorGreymuda_2"
+            android:padding="10dp">
+
+            <TextView
+
+                android:id="@+id/jumbarc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="Jumlah Barcode"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jumbarc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jumbarc1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="9dp" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/judulnoref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorBlack"
+            android:padding="2dp"
+            android:text="No REFF "
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/textnoref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/judulnoref"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/addroundjudul"
+            android:text=""
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_below="@+id/textnoref"
+            android:id="@+id/judulkondisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorBlack"
+            android:padding="2dp"
+            android:text="Status Transaksi"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_below="@+id/judulkondisi"
+            android:id="@+id/statustrans"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/addroundjudul"
+            android:text=""
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/textTampung"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTampung2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTampung3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="2dp"
+          android:padding="2dp"
+        android:background="@drawable/addroundtitlehd"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/rltvheader">
+
+        <EditText
+android:textColor="@color/colorWhite"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/cariText"
+            android:hint="Barcode Scan"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/butmanualbarc"
+            android:layout_gravity="center_vertical"
+            android:textSize="9dp"
+            android:text="Manual Barcode"
+            android:layout_width="80dp"
+            android:layout_height="42dp"/>
+
+        <Button
+            android:id="@+id/butmanualbarcdel"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="X"
+            android:textColor="@color/colorAccent"
+            android:layout_width="40dp"
+            android:layout_height="42dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/my_recycler_view"
+
+        android:layout_below="@+id/rltvheader"
+
+        android:scrollbars="vertical"
+
+        android:layout_width="match_parent"
+        android:background="@color/colorGreymuda_2"
+        android:padding="4dp"
+
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

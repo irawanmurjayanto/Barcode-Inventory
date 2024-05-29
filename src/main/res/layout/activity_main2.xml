@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <android.support.v7.widget.Toolbar
+        android:theme="@style/MyTheme"
+        app:popupTheme="@style/MyTheme"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorGreytua"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="Barcode Sawmill PT. KINI Paradise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+android:padding="5dp"
+
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:text="Date"
+        android:id="@+id/periode"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:id="@+id/layout1"
+        android:background="@color/colorGreymuda_2"
+
+        android:layout_marginTop="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:hint="Periode Awal"
+            android:textSize="10dp"
+            android:id="@+id/tv_dateresult1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+android:layout_toRightOf="@+id/bt_datepicker1"
+android:layout_marginLeft="5dp"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:textSize="10dp"
+            android:id="@+id/tv_dateresult2"
+
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bt_datepicker1"
+            android:text="Show DatePicker"
+            android:src="@drawable/calender2"
+            android:layout_toRightOf="@id/tv_dateresult1"
+
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+
+
+        android:text="Section"
+        android:id="@+id/section"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:id="@+id/layout2"
+        android:background="@color/colorGreymuda_2"
+android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_below="@+id/section"
+
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+
+            android:textSize="12dp"
+            android:id="@+id/hasilsection"
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <TextView
+android:layout_marginLeft="5dp"
+            android:layout_below="@+id/section"
+
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+
+            android:textSize="12dp"
+            android:id="@+id/hasilidno"
+
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+<Button
+    android:layout_marginLeft="5dp"
+    android:gravity="center_vertical|center_horizontal"
+    android:textStyle="bold"
+    android:id="@+id/getsection"
+    android:layout_below="@+id/section"
+    android:text=":"
+
+    android:layout_width="40dp"
+    android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/barc1"
+        android:text="Barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:background="@color/colorGreymuda"
+        android:id="@+id/bedulkubu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textmacadd2"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

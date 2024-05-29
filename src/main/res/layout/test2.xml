@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:descendantFocusability="beforeDescendants"
+android:focusableInTouchMode="true"
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<android.support.v7.widget.CardView
+    android:id="@+id/cv"
+    android:padding="2dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/cardview_shadow_end_color"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/textIDNO"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/textTgl2"
+            android:textSize="10dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:background="@drawable/addroundtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/addround"
+            android:id="@+id/textJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textRemarks"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/textTag"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/textitemcode3"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

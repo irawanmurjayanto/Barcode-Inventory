@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+<TextView
+    android:layout_marginBottom="10dp"
+    android:gravity="center_horizontal"
+    android:textColor="@color/colorWhite"
+    android:background="@color/colorBlack"
+    android:padding="5dp"
+    android:text="Golden Care Android Report"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+
+            android:text="Periode Tanggal"
+            android:id="@+id/periode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="2dp"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+
+            android:background="@color/colorAccent"
+            android:hint="Periode Awal"
+            android:textSize="10dp"
+            android:id="@+id/tv_dateresult1"
+            android:layout_below="@+id/periode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bt_datepicker1"
+            android:text="Show DatePicker"
+            android:src="@drawable/calender2"
+            android:layout_toRightOf="@id/tv_dateresult1"
+            android:layout_below="@+id/periode"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/tv_dateresult1"
+            android:layout_below="@+id/periode"
+            android:text=" TO "
+            android:id="@+id/textTo"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:padding="4dp"
+            android:background="@color/colorAccent"
+            android:hint="Periode Akhir"
+            android:textSize="10dp"
+            android:id="@+id/tv_dateresult2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textTo"
+            android:layout_below="@+id/periode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bt_datepicker2"
+            android:text="Show DatePicker"
+            android:src="@drawable/calender2"
+            android:layout_toRightOf="@id/tv_dateresult2"
+            android:layout_below="@+id/periode"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Report : " />
+
+    <RadioGroup
+        android:id="@+id/acc_rpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/omzetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sales By Date" />
+
+        <RadioButton
+            android:id="@+id/exportsales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Export Data To Excel (Whatsup,email etc)" />
+
+        <RadioButton
+            android:visibility="invisible"
+            android:id="@+id/historybarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="History Barcode (No Date Range)" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Process" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+       android:gravity="center"
+            android:text="Irawan Murjayanto 2022-2023"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textHasil1"
+        android:padding="4dp"
+        android:hint="hasil1"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textHasil2"
+        android:padding="4dp"
+        android:hint="hasil1"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:id = "@+id/web_view"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent" />
+
+</LinearLayout>

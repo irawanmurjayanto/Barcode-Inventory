@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".warning">
+
+    <TextView
+        android:id="@+id/textwarning"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+         android:paddingBottom="150dp"
+        android:paddingTop="150dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="User/Password Anda tidak benar "
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"/>
+
+</RelativeLayout>

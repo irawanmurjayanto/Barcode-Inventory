@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context=".Inventory_Barang"
+
+    tools:showIn="@layout/activity_inventory__barang">
+
+
+
+
+    <RelativeLayout
+
+
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:background="@color/colorGreymuda"
+        android:id="@+id/relcoll1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:layout_toRightOf="@+id/judulnoref"
+          android:layout_marginBottom="10dp"
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <Button
+android:visibility="invisible"
+            android:gravity="right"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/addroundbut"
+            android:layout_marginRight="5dp"
+            android:textSize="8dp"
+            android:text="Del. NO REF"
+
+            android:id="@+id/butdelnoref"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+      </RelativeLayout>
+
+        <RelativeLayout
+android:id="@+id/lay24"
+            android:layout_toRightOf="@+id/idjdl0"
+            android:padding="10dp"
+            android:background="@color/colorGreymuda_2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/butpost2"
+                android:text="Post Data"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+android:textStyle="bold"
+                android:textSize="10dp"
+            android:gravity="center_horizontal"
+                android:layout_below="@+id/butpost2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:text="Jumlah Barcode"
+                android:id="@+id/jumbarc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+ <LinearLayout
+     android:layout_below="@+id/jumbarc1"
+     android:gravity="center_horizontal"
+     android:orientation="horizontal"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+
+            <TextView
+               android:textStyle="bold"
+android:textSize="16dp"
+
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:text="0"
+                android:id="@+id/jumbarc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+     <TextView
+
+
+         android:textStyle="bold"
+         android:textSize="16dp"
+         android:layout_marginBottom="5dp"
+         android:layout_weight="1"
+         android:text=" /"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+            <TextView
+
+
+                android:textStyle="bold"
+                android:textSize="16dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:id="@+id/jumbarc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+ </LinearLayout>
+</LinearLayout>
+        </RelativeLayout>
+
+       <RelativeLayout
+
+           android:layout_below="@+id/invno"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/colorWhite"
+android:background="@drawable/addroundbut"
+android:textSize="8dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/butsalessum"
+            android:text="Summary"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+       </RelativeLayout>
+
+        <TextView
+            android:padding="2dp"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/judulnoref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No REFF "
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/judulnoref"
+            android:background="@drawable/addroundjudul"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textnoref"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:padding="2dp"
+            android:layout_below="@+id/textnoref"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/idjdl0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi Tujuan"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_below="@+id/idjdl0"
+            android:id="@+id/spnOven"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="200dp"
+            android:layout_height="27dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/customspinner1"
+            android:dropDownWidth="200dp"
+            android:dropDownVerticalOffset="28dp"
+            android:popupBackground="@android:color/white"
+            android:popupElevation="2dp"
+            android:stateListAnimator="@drawable/spinner_sla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:padding="2dp"
+            android:layout_below="@+id/spnOven"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/invjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Invoice"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+        <EditText
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/invjudul"
+            android:id="@+id/invno"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/addroundbut"
+            android:textSize="12dp"
+            android:text="Inv. No"
+            android:layout_toRightOf="@+id/invno"
+            android:layout_below="@+id/invjudul"
+            android:id="@+id/butambilinv"
+            android:layout_width="70dp"
+            android:layout_height="32dp"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/textTampung"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/textTampung2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:layout_below="@+id/spnOven"
+            android:layout_width="1dp"
+            android:layout_height="1dp">
+            <TextView
+                android:background="@color/colorBlack"
+                android:textColor="@color/colorWhite"
+android:visibility="invisible"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/idjdl1"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:text="Nama Wrh/Oven"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:visibility="invisible"
+                android:textSize="12dp"
+                android:background="@drawable/addroundjudul"
+                android:layout_margin="5dp"
+                android:id="@+id/editOven"
+                android:layout_below="@+id/idjdl1"
+                android:layout_width="1dp"
+                android:layout_height="1dp"/>
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/butovenname"
+                android:textSize="8dp"
+                android:layout_toRightOf="@+id/editOven"
+                android:layout_below="@+id/idjdl1"
+                android:text="Oven Name"
+                android:layout_width="1dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_below="@+id/butovenname"
+                android:id="@+id/textTampung3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/rltvheader">
+
+
+
+
+
+
+        <EditText
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:id="@+id/cariText"
+            android:hint="Barcode Scan"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/butmanualbarc"
+            android:layout_gravity="center_vertical"
+            android:textSize="9dp"
+            android:text="Manual Barcode"
+            android:layout_width="80dp"
+            android:layout_height="42dp"/>
+
+        <Button
+            android:id="@+id/butmanualbarcdel"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:text="X"
+            android:textColor="@color/colorAccent"
+            android:layout_width="40dp"
+            android:layout_height="42dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/my_recycler_view"
+
+        android:layout_below="@+id/rltvheader"
+
+        android:scrollbars="vertical"
+
+        android:layout_width="match_parent"
+        android:background="@color/colorGreymuda_2"
+        android:padding="4dp"
+
+        android:layout_height="match_parent"/>
+
+    <WebView
+        android:id = "@+id/web_view"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent" />
+
+</LinearLayout>

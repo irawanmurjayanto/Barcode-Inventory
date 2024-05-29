@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:layout_marginBottom="7dp"
+
+    android:padding="0dp">
+
+
+<android.support.v7.widget.CardView
+
+    android:id="@+id/cv"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:padding="5dp"
+    android:background="@color/colorBlack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <TextView
+      android:textSize="12dp"
+      android:textStyle="bold"
+      android:textColor="@color/colorWhite"
+      android:id="@+id/texttujuan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_toRightOf="@+id/texttujuan"
+        android:id="@+id/jumlahbarc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:padding="10dp"
+
+    >
+
+
+
+<TextView
+
+android:gravity="center"
+    android:textSize="12dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="5dp"
+    android:id="@+id/textViewRownoref"
+    android:layout_width="155dp"
+    android:layout_height="wrap_content"
+    android:text="barcode" />
+
+    <TextView
+        android:padding="2dp"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:layout_toRightOf="@+id/textViewRownoref"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textTagTran"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="barcode" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/textTagTran"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textTgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tgl" />
+
+
+<TextView
+    android:visibility="invisible"
+    android:layout_marginLeft="5dp"
+    android:textSize="12dp"
+    android:textStyle="bold"
+    android:id="@+id/textViewRowNama"
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:layout_below="@+id/textViewRowKode"
+    android:text="Nama Barang" />
+
+<TextView
+    android:textSize="10dp"
+    android:visibility="invisible"
+    android:id="@+id/textViewRowHarga"
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:layout_marginLeft="5dp"
+    android:layout_below="@+id/textViewRowNama"
+    android:text="Harga Jual" />
+
+    <TextView
+    android:textSize="10dp"
+    android:layout_marginLeft="5dp"
+    android:visibility="invisible"
+
+    android:id="@+id/textViewRowHarga_beli"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="0dp"
+
+
+    android:layout_below="@+id/textViewRowHarga"
+
+    android:text="Harga Beli" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible"
+        android:id="@+id/textViewRowIDNO"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textViewRowHarga_beli"
+        android:text="IDNO" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>

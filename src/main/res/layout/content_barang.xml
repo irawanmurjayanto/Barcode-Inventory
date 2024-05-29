@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context=".BarangActivity"
+
+    tools:showIn="@layout/activity_barang">
+
+<android.support.design.widget.TextInputLayout
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="8dp">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<EditText
+    android:id="@+id/editTextKode"
+    android:layout_width="250dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:hint="Kode"/>
+
+</LinearLayout>
+    </android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+<EditText
+  android:visibility="invisible"
+    android:id="@+id/editTextNama"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="0.1dp"
+
+    android:hint="Nama"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="8dp">
+
+<EditText
+    android:visibility="invisible"
+    android:id="@+id/editTextHarga"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="0.1dp"
+
+    android:hint="Harga Jual"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/editTextHarga_beli"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="0.1dp"
+
+            android:hint="Harga Beli"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp">
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textViewIDNO2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>

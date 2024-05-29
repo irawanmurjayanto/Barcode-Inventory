@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/gc_import"
+
+        android:orderInCategory="100"
+
+        android:title="Golden Care Import"
+
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/gc_IN"
+
+        android:orderInCategory="100"
+
+        android:title="Golden Care IN"
+
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/gc_out"
+
+        android:orderInCategory="100"
+
+        android:title="Golden Care OUT"
+
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/rt_in"
+
+        android:orderInCategory="100"
+
+        android:title="Return IN"
+
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/rt_out"
+
+        android:orderInCategory="100"
+
+        android:title="Return OUT"
+
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/stockgc"
+
+        android:orderInCategory="100"
+
+        android:title="Stock Active Golden Care"
+
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/stockgcbad"
+
+        android:orderInCategory="100"
+
+        android:title="Bad Stock Golden Care"
+
+        app:showAsAction="never" />
+
+
+
+    <item
+
+        android:id="@+id/action_tentang"
+
+        android:orderInCategory="100"
+
+        android:title="About"
+
+        app:showAsAction="never" />
+
+
+
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:layout_marginBottom="7dp"
+
+    android:padding="0dp">
+
+
+<android.support.v7.widget.CardView
+
+    android:id="@+id/cv"
+    android:layout_marginTop="2dp"
+android:layout_marginBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/addrounddetailout"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+  <LinearLayout
+
+      android:padding="2dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:textColor="@color/colorWhite"
+          android:background="@drawable/addroundtitle"
+          android:textSize="16dp"
+          android:textStyle="bold"
+          android:id="@+id/textSales"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="barcode" />
+
+  </LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+android:padding="2dp"
+
+
+    >
+
+<TextView
+    android:visibility="invisible"
+    android:id="@+id/textIDNO"
+    android:layout_width="1dp"
+    android:layout_height="1dp"/>
+
+<TextView
+
+    android:background="@drawable/addrounddetail"
+    android:layout_weight="1"
+    android:textSize="12dp"
+    android:textStyle="bold"
+
+    android:id="@+id/textNoref"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:text="barcode" />
+
+    <TextView
+        android:background="@drawable/addrounddetail"
+        android:layout_weight="1"
+
+    android:textSize="12dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="5dp"
+    android:id="@+id/textTgl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="barcode" />
+
+    <TextView
+         android:visibility="invisible"
+        android:textSize="1dp"
+        android:id="@+id/textTglxx"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text="Tgl" />
+
+    <TextView
+        android:visibility="invisible"
+        android:textSize="1dp"
+        android:id="@+id/textUsernamexx"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text="UserName" />
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.barcodegcnew.Emp_RegAssSaw">
+
+    <TextView
+
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textNotrans"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+<Button
+    android:id="@+id/butposulang"
+    android:layout_below="@+id/textNotrans"
+    android:text="Post Ulang"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_toRightOf="@+id/butposulang"
+        android:id="@+id/butposulangclose"
+        android:layout_below="@+id/textNotrans"
+        android:text="Close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+android:visibility="invisible"
+        android:padding="10dp"
+        android:id="@+id/textItemcode"
+        android:background="@color/colorGreymuda"
+        android:hint="Ketik Nama Section"
+        android:layout_below="@+id/butposulang"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/colorGreymuda_2"
+        android:id="@+id/my_recycler_view_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textItemcode"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
